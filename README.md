@@ -43,7 +43,7 @@ _Goal: Managing time and resources._
 - **[01_SuperLoops_vs_RTOS.md](./04_RTOS_vs_OS/01_SuperLoops_vs_RTOS.md)**: Why we need schedulers.
 - **[02_Context_Switching.md](./04_RTOS_vs_OS/02_Context_Switching.md)**: Saving and restoring state.
 - **[03_Concurrency_Issues.md](./04_RTOS_vs_OS/03_Concurrency_Issues.md)**: Deadlocks and Race Conditions.
-- **[04_Lab_RTOS_Concepts.md](./04_RTOS_vs_OS/04_Lab_RTOS_Concepts.md)**: Designing a simple scheduler.
+- **[04_Lab_RTOS_Concepts.md](./04_RTOS_vs_OS/04_Lab_RTOS_Concepts.md)**: Designing a simple scheduler. 
 
 ---
 

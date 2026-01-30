@@ -2,7 +2,7 @@
 
 ## The Analogy: The Carpenter's Workshop
 
-To understand a CPU, imagine a carpenter at a workbench.
+To understand a CPU, imagine a carpenter at a workbench. 
 
 1.  **The Workbench (Registers)**:
     - Small table right in front of the carpenter.
