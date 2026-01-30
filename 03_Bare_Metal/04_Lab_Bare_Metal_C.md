@@ -62,6 +62,15 @@ void main() {
 2.  Why the `while(1)` at the end?
 3.  **Thought Experiment**: If `uart_puts` takes 1ms per character, and you are printing a 1000 char log, the CPU is blocked for 1 second. How would you fix this using Interrupts? (Ring Buffers).
 
+## 🛠️ Tools to Try
+
+Since you might not have a physical board, use these:
+
+- **[Wokwi Simulator](https://wokwi.com/projects/new/esp32-c3)**: Simulate an ESP32-C3 (RISC-V) right in your browser. You can write the C code above and see it run!
+- **[PlatformIO](https://platformio.org/)**: The best VS Code extension for embedded development. Use this when you get real hardware.
+
 ---
+
 ## Navigation
+
 [< Previous](./03_The_Boot_Process.md) | [Home](../README.md) | [Next >](../04_RTOS_vs_OS/README.md)

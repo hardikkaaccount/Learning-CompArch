@@ -41,6 +41,13 @@ give_lock(mutex);
 
 **Research Insight**: Formal Verification is a field dedicated to mathematically proving that a system CANNOT deadlock.
 
+## 📚 Recommended Reading
+
+- **[The Little Book of Semaphores](https://greenteapress.com/wp/semaphores/)**: This is free and it is the _best_ book on solving concurrency puzzles.
+  - _Challenge_: Try to solve the "Dining Philosophers Problem" after reading it.
+
 ---
+
 ## Navigation
+
 [< Previous](./02_Context_Switching.md) | [Home](../README.md) | [Next >](./04_Lab_RTOS_Concepts.md)

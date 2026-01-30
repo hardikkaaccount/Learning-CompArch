@@ -36,6 +36,13 @@ SECTIONS {
 
 **Research Insight**: If you are designing a new AI chip, YOU write this map. You decide where memory lives.
 
+## 🎓 Deep Dive Resource
+
+- **[OSDev Wiki](https://wiki.osdev.org/Main_Page)**: This is the "Bible" of systems programming.
+- **[Linker Scripts Guide](https://wiki.osdev.org/Linker_Scripts)**: Read this when you need to understand `.ld` files.
+
 ---
+
 ## Navigation
+
 [< Previous](./02_Interrupts_and_Polling.md) | [Home](../README.md) | [Next >](./04_Lab_Bare_Metal_C.md)

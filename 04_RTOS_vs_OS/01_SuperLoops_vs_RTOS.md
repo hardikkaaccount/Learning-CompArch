@@ -44,6 +44,13 @@ The **Scheduler** (The Boss) pauses Task B instantly when Task A needs to run.
 - **RTOS (FreeRTOS/Zephyr)**: "I promise, or I will die trying." (Hard Real-Time).
   _Critical for:_ Airbags, Pacemakers, Drone Flight Controllers.
 
+## 🛠️ Tools & Resources
+
+- **[FreeRTOS.org](https://www.freertos.org/)**: The most popular open-source RTOS. Browse their "Kernel" documentation.
+- **[Zephyr Project](https://www.zephyrproject.org/)**: The modern, Linux-foundation backed RTOS for connected devices.
+
 ---
+
 ## Navigation
+
 [< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Context_Switching.md)
