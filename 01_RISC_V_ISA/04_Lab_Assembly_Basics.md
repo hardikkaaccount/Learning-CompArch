@@ -7,7 +7,7 @@ We will write a simple program: **Fibonacci Sequence**.
 
 ### The Setup
 
-Since we don't have a physical board yet, we use **[Venus Simulator](https://venus.cs.berkeley.edu/)**.
+Since we don't have a physical board yet, we use **[Venus Simulator](https://venus.cs61c.org/)**.
 
 1. Open Venus in your browser.
 2. Go to the "Editor" tab.
