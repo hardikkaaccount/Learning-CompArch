@@ -23,3 +23,7 @@ Context Switching is not free.
 - It thrashes the **Cache** (Task A's data is replaced by Task B's data).
 
 **Research Area**: "Hardware Threading" (Barrel Processors) where the CPU has _multiple_ physical register sets to switch instantly (0 cycles).
+
+---
+## Navigation
+[< Previous](./01_SuperLoops_vs_RTOS.md) | [Home](../README.md) | [Next >](./03_Concurrency_Issues.md)

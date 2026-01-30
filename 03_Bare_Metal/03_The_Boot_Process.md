@@ -35,3 +35,7 @@ SECTIONS {
 ```
 
 **Research Insight**: If you are designing a new AI chip, YOU write this map. You decide where memory lives.
+
+---
+## Navigation
+[< Previous](./02_Interrupts_and_Polling.md) | [Home](../README.md) | [Next >](./04_Lab_Bare_Metal_C.md)

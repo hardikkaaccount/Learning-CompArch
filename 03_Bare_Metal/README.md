@@ -26,3 +26,7 @@ In Bare Metal programming, there is no Operating System (No Linux, No Windows).
 ---
 
 _Proceed to `01_Memory_Mapped_IO.md`._
+
+---
+## Navigation
+[< Previous](../02_Microarchitecture/04_Lab_Pipeline_Sim.md) | [Home](../README.md) | [Next >](./01_Memory_Mapped_IO.md)

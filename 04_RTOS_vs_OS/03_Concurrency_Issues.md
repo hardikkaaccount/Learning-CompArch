@@ -40,3 +40,7 @@ give_lock(mutex);
 - **Result**: Both freeze forever.
 
 **Research Insight**: Formal Verification is a field dedicated to mathematically proving that a system CANNOT deadlock.
+
+---
+## Navigation
+[< Previous](./02_Context_Switching.md) | [Home](../README.md) | [Next >](./04_Lab_RTOS_Concepts.md)

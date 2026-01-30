@@ -69,3 +69,7 @@ Let's decode `ADD t0, t1, t2`.
    - rs2 (Source2): 00111 (7)
 
 **Hardware View**: The bits `00110` flow into the "Read Address" port of the Register File. The values flow out to the ALU. The opcode tells the ALU "Do Addition". The result flows back to Register `00101`.
+
+---
+## Navigation
+[< Previous](./02_Registers_and_Memory.md) | [Home](../README.md) | [Next >](./04_Lab_Assembly_Basics.md)

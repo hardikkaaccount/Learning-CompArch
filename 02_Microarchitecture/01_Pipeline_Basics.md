@@ -47,3 +47,7 @@ Even though each instruction takes 5 cycles to finish, we have 5 of them in flig
 - Low IPC = Stalls/Bubbles (Factory stopped).
 
 Your goal in research is often keeping the pipeline full.
+
+---
+## Navigation
+[< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Hazards_and_Stalls.md)

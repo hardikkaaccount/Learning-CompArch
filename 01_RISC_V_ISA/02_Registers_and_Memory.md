@@ -55,3 +55,7 @@ The Stack is a region of RAM used for function local variables.
 - `sp` (Stack Pointer) keeps track of the bottom.
 - When you enter a function: Decrement `sp` (make space).
 - When you leave a function: Increment `sp` (clean up).
+
+---
+## Navigation
+[< Previous](./01_Mental_Model.md) | [Home](../README.md) | [Next >](./03_Instruction_Formats.md)

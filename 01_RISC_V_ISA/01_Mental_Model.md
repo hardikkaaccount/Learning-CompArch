@@ -50,3 +50,7 @@ You MUST do:
 3. `STORE` Register back to Memory.
 
 This simplicity allows the hardware designers (us) to optimize the hell out of the CPU.
+
+---
+## Navigation
+[< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Registers_and_Memory.md)

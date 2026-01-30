@@ -37,3 +37,7 @@ Why do Caches work? Because programs are predictable.
 - **Miss Penalty**: The time wasted waiting.
 
 **ML Research Note**: Matrix Multiplication is heavily optimized to maximize "Spatial Locality" (Blocking/Tiling) to avoid cache misses.
+
+---
+## Navigation
+[< Previous](./02_Hazards_and_Stalls.md) | [Home](../README.md) | [Next >](./04_Lab_Pipeline_Sim.md)

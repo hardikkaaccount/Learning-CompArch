@@ -61,3 +61,7 @@ void main() {
 1.  Study the pointer logic. Why `volatile`? (See Lesson 3.1).
 2.  Why the `while(1)` at the end?
 3.  **Thought Experiment**: If `uart_puts` takes 1ms per character, and you are printing a 1000 char log, the CPU is blocked for 1 second. How would you fix this using Interrupts? (Ring Buffers).
+
+---
+## Navigation
+[< Previous](./03_The_Boot_Process.md) | [Home](../README.md) | [Next >](../04_RTOS_vs_OS/README.md)

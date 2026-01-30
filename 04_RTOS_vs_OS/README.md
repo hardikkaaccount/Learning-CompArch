@@ -23,3 +23,7 @@ This module introduces the **Operating System (OS)**, specifically focusing on *
 ---
 
 _Proceed to `01_SuperLoops_vs_RTOS.md`._
+
+---
+## Navigation
+[< Previous](../03_Bare_Metal/04_Lab_Bare_Metal_C.md) | [Home](../README.md) | [Next >](./01_SuperLoops_vs_RTOS.md)

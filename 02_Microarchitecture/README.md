@@ -23,3 +23,7 @@ Two different processors (e.g., a tiny embedded chip vs. a supercomputer) can sp
 ---
 
 _Proceed to `01_Pipeline_Basics.md`._
+
+---
+## Navigation
+[< Previous](../01_RISC_V_ISA/04_Lab_Assembly_Basics.md) | [Home](../README.md) | [Next >](./01_Pipeline_Basics.md)

@@ -43,3 +43,7 @@ The **Scheduler** (The Boss) pauses Task B instantly when Task A needs to run.
 - **General OS (Windows/Linux)**: "I'll try my best." (Soft Real-Time).
 - **RTOS (FreeRTOS/Zephyr)**: "I promise, or I will die trying." (Hard Real-Time).
   _Critical for:_ Airbags, Pacemakers, Drone Flight Controllers.
+
+---
+## Navigation
+[< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Context_Switching.md)

@@ -85,3 +85,7 @@ end:
 ---
 
 _> Next Module: The hardware pipeline that executes this code._
+
+---
+## Navigation
+[< Previous](./03_Instruction_Formats.md) | [Home](../README.md) | [Next >](../02_Microarchitecture/README.md)

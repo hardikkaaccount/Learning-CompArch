@@ -42,3 +42,7 @@ Devices usually have multiple addresses (Registers):
 3.  **Data Register (DR)**: The actual payload.
 
 **Research Note**: In AI Accelerators, you send the "Concept" of a Matrix Multiplication by writing the _address_ of your matrix to the accelerator's Control Register via MMIO.
+
+---
+## Navigation
+[< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Interrupts_and_Polling.md)

@@ -40,3 +40,7 @@ What if an interrupt happens _while you are handling another interrupt_?
 - **Nested Interrupts**: Allowed? Risky.
 - **Race Conditions**: If the Main Loop and the ISR both try to update `counter++`, you get data corruption.
 - **Critical Sections**: Disabling interrupts briefly to update shared data safely.
+
+---
+## Navigation
+[< Previous](./01_Memory_Mapped_IO.md) | [Home](../README.md) | [Next >](./03_The_Boot_Process.md)

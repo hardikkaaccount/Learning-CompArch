@@ -42,3 +42,7 @@ Imagine:
     - If wrong? **Flush**. Throw away the work we did on the wrong path (Wasted energy).
 
 **Research Area**: Modern Branch Predictors use AI/Perceptrons to guess correctly 99% of the time.
+
+---
+## Navigation
+[< Previous](./01_Pipeline_Basics.md) | [Home](../README.md) | [Next >](./03_Memory_Hierarchy.md)
