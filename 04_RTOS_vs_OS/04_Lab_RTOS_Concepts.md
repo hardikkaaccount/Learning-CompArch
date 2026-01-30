@@ -43,5 +43,7 @@ Write a Python script `scheduler_sim.py` that manages a list of `Task` objects a
 This is exactly how simulator tools for research (like Gem5) work at a high level.
 
 ---
+
 ## Navigation
-[< Previous](./03_Concurrency_Issues.md) | [Home](../README.md) | [Next >](../README.md)
+
+[< Previous](./03_Concurrency_Issues.md) | [Home](../README.md) | [**Finish Course 🎓**](../Course_Completed.md)
