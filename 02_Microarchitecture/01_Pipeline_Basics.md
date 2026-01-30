@@ -48,6 +48,13 @@ Even though each instruction takes 5 cycles to finish, we have 5 of them in flig
 
 Your goal in research is often keeping the pipeline full.
 
+## 🛠️ Tools & Resources
+
+- **[Ben Eater: Build a 6502 Computer](https://eater.net/6502)**: Even though it's 8-bit, the first 5 videos perfectly explain the "Bus" concepts.
+- **[Visual6502](http://www.visual6502.org/JSSim/)**: See actual transistors firing (Advanced).
+
 ---
+
 ## Navigation
+
 [< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Hazards_and_Stalls.md)

@@ -40,5 +40,7 @@ If you have a customized ML accelerator (TPU), it doesn't have a 5-stage pipelin
 - _Task_: Google "Systolic Array Animation" to see how it differs from the scalar pipeline you just watched. It flows like a wave!
 
 ---
+
 ## Navigation
+
 [< Previous](./03_Memory_Hierarchy.md) | [Home](../README.md) | [Next >](../03_Bare_Metal/README.md)

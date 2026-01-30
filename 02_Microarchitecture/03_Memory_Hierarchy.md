@@ -38,6 +38,13 @@ Why do Caches work? Because programs are predictable.
 
 **ML Research Note**: Matrix Multiplication is heavily optimized to maximize "Spatial Locality" (Blocking/Tiling) to avoid cache misses.
 
+## 🎓 Deep Dive Resource
+
+- **[Onur Mutlu: ETH Zurich Lectures](https://www.youtube.com/@OnurMutluLectures)**: If you want to research DRAM/Flash memory, this channel is the Gold Standard.
+  - _Start with_: "Memory Systems and Memory Hierarchy".
+
 ---
+
 ## Navigation
+
 [< Previous](./02_Hazards_and_Stalls.md) | [Home](../README.md) | [Next >](./04_Lab_Pipeline_Sim.md)
