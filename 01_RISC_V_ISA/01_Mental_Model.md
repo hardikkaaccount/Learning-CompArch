@@ -51,6 +51,15 @@ You MUST do:
 
 This simplicity allows the hardware designers (us) to optimize the hell out of the CPU.
 
+## 🛠️ Tools & Resources for this Module
+
+- **[RISC-V Card](https://github.com/jameslzhu/riscv-card.git)**: Print this! It is your periodic table of instructions.
+- **[Venus Simulator](https://venus.cs61c.org/)**: Run assembly code in your browser.
+- **[Godbolt Compiler Explorer](https://godbolt.org/)**: Type C code on the left, see RISC-V Assembly on the right.
+- **[NandGame](https://nandgame.com/)**: If you want to understand "Digital Logic" (Gates) before "Architecture".
+
 ---
+
 ## Navigation
+
 [< Previous](./README.md) | [Home](../README.md) | [Next >](./02_Registers_and_Memory.md)

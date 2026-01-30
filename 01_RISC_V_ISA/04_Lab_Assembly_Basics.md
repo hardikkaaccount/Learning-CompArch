@@ -82,10 +82,29 @@ end:
 2. Step through line-by-line using the "Simulator" tab. Watch the `t` registers change.
 3. **Hard Mode**: Write a program that sums numbers from 1 to 10 (`1 + 2 + ... + 10`).
 
+## 🔬 Compare with C (Godbolt)
+
+Want to cheat? Write the code in C and see what the compiler does.
+
+1. Open **[Godbolt](https://godbolt.org/)**.
+2. Type:
+   ```c
+   int fib(int n) {
+       int a=0, b=1, sum=0;
+       for(int i=1; i<n; i++) {
+           sum = a+b; a=b; b=sum; // Look familiar?
+       }
+       return a;
+   }
+   ```
+3. See the generated assembly. It will look surprisingly similar to yours!
+
 ---
 
 _> Next Module: The hardware pipeline that executes this code._
 
 ---
+
 ## Navigation
+
 [< Previous](./03_Instruction_Formats.md) | [Home](../README.md) | [Next >](../02_Microarchitecture/README.md)

@@ -19,7 +19,7 @@ To understand a CPU, imagine a carpenter at a workbench.
 ## The RISC-V Registers
 
 RISC-V has **32 General Purpose Registers** (x0 - x31). Each is 32-bits (or 64-bits) wide.
-You _must_ memorize the special ones.
+You _must_ memorize the special ones. (Keep your **[RISC-V Card](https://github.com/jameslzhu/riscv-card.git)** handy!)
 
 | Register           | Name    | Role                                                                 | "The Carpenter" Analogy                      |
 | :----------------- | :------ | :------------------------------------------------------------------- | :------------------------------------------- |
@@ -57,5 +57,7 @@ The Stack is a region of RAM used for function local variables.
 - When you leave a function: Increment `sp` (clean up).
 
 ---
+
 ## Navigation
+
 [< Previous](./01_Mental_Model.md) | [Home](../README.md) | [Next >](./03_Instruction_Formats.md)

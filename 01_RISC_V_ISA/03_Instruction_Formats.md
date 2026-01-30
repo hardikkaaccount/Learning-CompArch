@@ -70,6 +70,18 @@ Let's decode `ADD t0, t1, t2`.
 
 **Hardware View**: The bits `00110` flow into the "Read Address" port of the Register File. The values flow out to the ALU. The opcode tells the ALU "Do Addition". The result flows back to Register `00101`.
 
+## 🔬 See it in Action
+
+Don't believe me?
+
+1. Open **[Godbolt](https://godbolt.org/)**.
+2. Select compiler: `RISC-V rv32gc clang`.
+3. Type: `int add(int a, int b) { return a + b; }`
+4. Look at the output. You will see `add a0, a0, a1`.
+   _(Note: The compiler uses `a0` and `a1` for arguments, not `t` registers)._
+
 ---
+
 ## Navigation
+
 [< Previous](./02_Registers_and_Memory.md) | [Home](../README.md) | [Next >](./04_Lab_Assembly_Basics.md)
