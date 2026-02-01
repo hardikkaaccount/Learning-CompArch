@@ -42,6 +42,95 @@ Write a Python script `scheduler_sim.py` that manages a list of `Task` objects a
 
 This is exactly how simulator tools for research (like Gem5) work at a high level.
 
+### Solution: Python Simulator
+
+```python
+from collections import deque
+
+# Task states
+READY = "READY"
+RUNNING = "RUNNING"
+BLOCKED = "BLOCKED"
+
+
+class Task:
+    def __init__(self, name, duration, priority):
+        self.name = name
+        self.remaining = duration      # total run time left (ms)
+        self.priority = priority
+        self.state = READY
+        self.wake_time = None           # used if sleeping
+
+    def __repr__(self):
+        return f"{self.name}({self.state})"
+
+
+def run_scheduler(tasks, quantum=100):
+    time = 0
+    ready = deque(tasks)
+    blocked = []
+    current = None
+
+    print("=== Scheduler Simulation Start ===")
+
+    while ready or blocked or current:
+        # Wake up blocked tasks
+        for task in blocked[:]:
+            if task.wake_time <= time:
+                task.state = READY
+                blocked.remove(task)
+                ready.append(task)
+                print(f"T={time}ms: {task.name} wakes up → READY")
+
+        # Pick a task if none running
+        if current is None and ready:
+            current = ready.popleft()
+            current.state = RUNNING
+            print(f"T={time}ms: {current.name} starts RUNNING")
+
+        if current is None:
+            time += 10
+            continue
+
+        # Simulate execution
+        run_time = min(quantum, current.remaining)
+        time += run_time
+        current.remaining -= run_time
+
+        # Simulated behavior: Task1 sleeps at 50ms
+        if current.name == "Task1" and current.remaining > 0 and time >= 50:
+            current.state = BLOCKED
+            current.wake_time = time + 200
+            blocked.append(current)
+            print(f"T={time}ms: {current.name} calls sleep(200) → BLOCKED")
+            current = None
+            continue
+
+        # Task finished
+        if current.remaining <= 0:
+            print(f"T={time}ms: {current.name} finishes")
+            current = None
+            continue
+
+        # Quantum expired → round-robin
+        print(f"T={time}ms: Quantum expired for {current.name}")
+        current.state = READY
+        ready.append(current)
+        current = None
+
+    print("=== Scheduler Simulation End ===")
+
+
+if __name__ == "__main__":
+    tasks = [
+        Task("Task1", duration=300, priority=1),
+        Task("Task2", duration=300, priority=1),
+        Task("Task3", duration=300, priority=1),
+    ]
+
+    run_scheduler(tasks)
+```
+
 ---
 
 ## Navigation

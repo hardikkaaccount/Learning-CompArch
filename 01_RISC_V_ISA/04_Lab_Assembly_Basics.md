@@ -17,54 +17,36 @@ Since we don't have a physical board yet, we use **[Venus Simulator](https://ven
 Copy/Paste this into the simulator. Read the comments!
 
 ```asm
-# Fibonacci Generator in RISC-V Assembly
-# Target: Calculate the 7th Fibonacci number
-# x1 (ra) = 0
-# t0 = n (counter)
-# t1 = Current number (Fib n)
-# t2 = Previous number (Fib n-1)
-# t3 = Temp storage
-
 .data
-    # This section is for static data (variables)
     result_msg: .string "Final Fibonacci Value: "
 
 .text
-    # This section is for instructions
     .globl main
-
 main:
-    # Initialize values
-    li t0, 7        # Load Immediate: Calculate 7th fib number
-    li t1, 1        # Current = 1
-    li t2, 0        # Prev = 0
-    li t4, 1        # Loop counter i = 1
-
+    li t0, 7
+    li t1, 1
+    li t2, 0
+    li t4, 1
 loop:
-    beq t4, t0, end # If i == 7, go to end (Branch Equal)
-
-    # Logic: next = current + prev
-    #        prev = current
-    #        current = next
-
-    add t3, t1, t2  # t3 = current + prev
-    mv  t2, t1      # prev = current (Move is pseudo for ADDI t2, t1, 0)
-    mv  t1, t3      # current = new_sum
-
-    addi t4, t4, 1  # i++
-    j loop          # Jump back to start of loop
-
+    beq t4, t0, end
+    add t3, t1, t2
+    mv  t2, t1
+    mv  t1, t3
+    addi t4, t4, 1
+    j loop
 end:
-    # t1 now holds the answer (13)
-    # Let's verify by just inspecting usage, or ecall to print (OS specific)
+    # 1. Print the string
+    li a0, 4           # Venus ecall 4 = print string
+    la a1, result_msg  # Load address into a1
+    ecall
 
-    # Venus specific instruction to print integer in a0
-    mv a0, t1       # Move result to argument register a0
-    li a7, 1        # System call code for "Print Int" is 1
-    ecall           # Wake up OS to do the print
+    # 2. Print the integer result
+    li a0, 1           # Venus ecall 1 = print integer
+    mv a1, t1          # Move result (t1) into a1
+    ecall
 
-    # Exit program
-    li a7, 10       # Exit code
+    # 3. Terminate program
+    li a0, 10          # Venus ecall 10 = exit
     ecall
 ```
 
@@ -98,6 +80,51 @@ Want to cheat? Write the code in C and see what the compiler does.
    }
    ```
 3. See the generated assembly. It will look surprisingly similar to yours!
+
+## 🔌 Bonus: Bare-Metal Style on Arduino
+
+For those interested in how this low-level access looks in C/C++ on a microcontroller (like Arduino), here is an example of accessing hardware registers directly (memory-mapped I/O) instead of using high-level libraries.
+
+```cpp
+#include <Arduino.h>
+#include <stdint.h>
+
+// 1. Define the Hardware Layout
+typedef struct {
+    volatile uint8_t DR;       // 0x00: Data Register
+    volatile uint8_t _pad1[4]; // 0x01–0x04
+    volatile uint8_t SR;       // 0x05: Status Register
+} UART_Device;
+
+// 2. Base Address (example / hypothetical)
+#define UART_BASE 0x10000000
+#define TX_READY_BIT (1 << 0)
+
+UART_Device* uart = (UART_Device*)UART_BASE;
+
+// 3. Low-level UART functions
+void uart_putc(char c) {
+    // Wait until transmitter is ready
+    while ((uart->SR & TX_READY_BIT) == 0);
+    uart->DR = c;
+}
+
+void uart_puts(const char* str) {
+    while (*str) {
+        uart_putc(*str++);
+    }
+}
+
+// 4. Arduino entry points
+void setup() {
+    uart_puts("Hello from Arduino bare-metal style!\n");
+}
+
+void loop() {
+    // Nothing to do
+    while (1);
+}
+```
 
 ---
 
